@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlotMachine.MainPage"
+             NavigationPage.HasNavigationBar="False">
+             
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="WidthRequest" Value="150" />
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="BackgroundColor" Value="Black" />
+            <Setter Property="TextColor" Value="White" />
+            
+
+
+            
+
+        </Style>
+
+
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="40"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image Source="gambler.png" />
+            <HorizontalStackLayout
+                Spacing="20"
+                HorizontalOptions="Center">
+                <Button
+                    x:Name="SettingBtn"
+                    Text="Settings"
+                    Clicked="SettingBtn_Clicked"/>
+                <Button Text="Play"
+                        x:Name="PlayBtn"
+                        Clicked="PlayBtn_Clicked"
+                        />
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

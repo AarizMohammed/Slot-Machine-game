@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlotMachine.SettingsPage"
+             Title="SettingsPage">
+    <HorizontalStackLayout HorizontalOptions="Center">
+        <Label 
+            Text="Easy Mode"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+           FontSize="30"/>
+        
+        <CheckBox
+            x:Name="EasyModeCheckBox"
+            Scale="1.3"
+            CheckedChanged="EasyModeCheckBox_CheckedChanged"
+                  />
+    </HorizontalStackLayout>
+</ContentPage>

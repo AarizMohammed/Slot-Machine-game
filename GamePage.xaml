@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlotMachine.GamePage"
+             Title="GamePage">
+    <ContentPage.Resources>
+        <Style TargetType="Image">
+            <Setter Property="WidthRequest" Value="200" />
+
+
+        </Style>
+
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <HorizontalStackLayout
+            Spacing="30"
+            HorizontalOptions="Center">
+
+
+            <Image
+                x:Name="Image1"
+                Source="casino.png" />
+            <Image
+                x:Name="Image2"
+                Source="casino.png" />
+            <Image
+                x:Name="Image3"
+                Source="casino.png" />
+
+
+            </HorizontalStackLayout>
+
+        <ImageButton
+            x:Name="SpinClicked"
+            Source="spin.png"
+            WidthRequest="200"
+            Clicked="SpinClicked_Clicked_1"
+
+                     />
+
+        <Label
+            HorizontalOptions="Center"
+            FontSize="40"
+            x:Name="BalanceLabel"
+            Text="Balance: 100$"
+            />
+    </VerticalStackLayout>
+</ContentPage>
